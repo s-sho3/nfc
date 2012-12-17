@@ -1,3 +1,10 @@
+libnfc-1.6.0-rc1.tar.gz
+MinGW64
+  from here:http://sourceforge.net/projects/tdm-gcc/files/TDM-GCC%20Installer/tdm64-gcc-4.5.1.exe/download
+cmake-2.8.10.2-win32-x86
+libusb-win32-bin-1.2.6.0
+
+must execute libusb-win32\bin\inf-wizard.exe
 
 MinGW64 path must not be after cygwin. <- otherwise CMake uses cygwin, and errors occur.
 path
@@ -5,6 +12,9 @@ user
 C:\Program Files (x86)\CMake 2.8\bin
 system
 C:\MinGW64\bin;c:\MinGW64\x86_64-w64-mingw32\lib32;c:\MinGW64\x86_64-w64-mingw32\include;c:\cygwin\bin;
+--if you failed arleady, delete these files, change path, and retry.
+C:\libnfc-build\CMakeCache.txt
+C:\libnfc-build\CMakeFiles
 
 cmake-gui .
 check "advanced"
