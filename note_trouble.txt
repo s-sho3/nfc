@@ -1,0 +1,14 @@
+
+MinGW64 path must not be after cygwin. <- otherwise CMake uses cygwin, and errors occur.
+path
+user
+C:\Program Files (x86)\CMake 2.8\bin
+system
+C:\MinGW64\bin;c:\MinGW64\x86_64-w64-mingw32\lib32;c:\MinGW64\x86_64-w64-mingw32\include;c:\cygwin\bin;
+
+cmake-gui .
+check "advanced"
+LIBUSB_INCLUDE_DIRS
+C:\libusb-win32-bin-1.2.6.0\include
+LIBUSB_LIBRARIES
+C:\libusb-win32-bin-1.2.6.0\lib\gcc\libusb.a
