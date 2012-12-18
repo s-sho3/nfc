@@ -22,3 +22,14 @@ LIBUSB_INCLUDE_DIRS
 C:\libusb-win32-bin-1.2.6.0\include
 LIBUSB_LIBRARIES
 C:\libusb-win32-bin-1.2.6.0\lib\gcc\libusb.a
+
+
+----------------
+
+SCL3711:
+--------
+Libnfc cannot be used concurrently with the PCSC proprietary driver of SCL3711.
+Two possible solutions:
+* Either you don't install SCL3711 driver at all
+* Or you stop the PCSC daemon when you want to use libnfc-based tools
+
